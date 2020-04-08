@@ -11,32 +11,38 @@ namespace MalbersAnimations
             LateUpdate = 4,                                             // Update in LateUpdate. (for tracking objects that are moved in Update)
         }
 
-        public Transform Reference;
-        public bool rotation = true;
-        public UpdateMode updateMode = UpdateMode.LateUpdate;
 
+        [Tooltip("Transform to use the Position as Reference")]
+        public Transform Reference;
+        [Tooltip("Use the Reference's Rotation")]
+        public bool rotation = true;  
+        [Tooltip("Use the Reference's Position")]
+        public bool position = true;
+
+
+        public UpdateMode updateMode = UpdateMode.LateUpdate;
 
         // Update is called once per frame
         void Update()
         {
-            if (updateMode == UpdateMode.Update) SetTransformReference();      
+            if (updateMode == UpdateMode.Update) SetTransformReference();
         }
 
         void LateUpdate()
         {
-            if (updateMode == UpdateMode.LateUpdate) SetTransformReference();       
+            if (updateMode == UpdateMode.LateUpdate) SetTransformReference();
         }
 
         void FixedUpdate()
         {
-            if (updateMode == UpdateMode.FixedUpdate) SetTransformReference();       
+            if (updateMode == UpdateMode.FixedUpdate) SetTransformReference();
         }
 
         private void SetTransformReference()
         {
             if (!Reference) return;
-            transform.position = Reference.position;
-           if(rotation) transform.rotation = Reference.rotation;
+            if (position) transform.position = Reference.position;
+            if (rotation) transform.rotation = Reference.rotation;
         }
     }
 }

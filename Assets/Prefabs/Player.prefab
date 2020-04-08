@@ -1991,9 +1991,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3678294641493464287}
   - component: {fileID: 3625676610062334533}
-  - component: {fileID: 9170347777602152505}
   - component: {fileID: 1420327587435186725}
   - component: {fileID: 1553936925420776363}
+  - component: {fileID: 129141083}
   m_Layer: 20
   m_Name: Player
   m_TagString: Untagged
@@ -2036,28 +2036,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &9170347777602152505
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3677132179657954465}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.52
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0.5
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
-  m_AutoRepath: 1
-  m_Height: 0.46
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &1420327587435186725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2071,7 +2049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1553936925420776363}
-  speed: 5
+  speed: 3
 --- !u!54 &1553936925420776363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2086,8 +2064,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &129141083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3677132179657954465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31, y: 0.45, z: 0.82}
+  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!1 &3677166718652101835
 GameObject:
   m_ObjectHideFlags: 0

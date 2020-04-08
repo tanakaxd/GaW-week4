@@ -26,8 +26,28 @@ namespace MalbersAnimations.Events
 
 
         public void DestroyMe(float time)
+        { Destroy(gameObject, time); }
+
+        public void DestroyMe()
+        { Destroy(gameObject); }
+
+        public void DestroyGameObject(GameObject go)
+        { Destroy(go); }
+
+        public void DestroyComponent(Component component)
+        { Destroy(component); }
+
+        public void Parent(Transform newParent)
         {
-            Destroy(gameObject, time);
+            transform.parent = newParent;
+        }
+
+        public void Parent_Local(Transform newParent)
+        {
+            transform.parent = newParent;
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.identity;
+            transform.localScale = Vector3.one;
         }
     }
 }
