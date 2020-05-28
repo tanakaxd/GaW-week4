@@ -63,14 +63,37 @@ namespace MalbersAnimations.Controller
             OnTargetArrived.Invoke(target);
         }
 
-        public Transform NextTarget()
+        // original
+        //public Transform NextTarget()
+        //{
+        //    if (NextTargets.Count > 0)
+        //    {
+        //        return NextTargets[UnityEngine.Random.Range(0, NextTargets.Count)];
+        //    }
+        //    return null;
+        //}
+
+
+
+        //modified
+        public List<Transform> NextTarget()
         {
             if (NextTargets.Count > 0)
             {
-                return NextTargets[UnityEngine.Random.Range(0, NextTargets.Count)];
+                return NextTargets;
             }
             return null;
         }
+
+        //public List<Transform> MyNextTarget()
+        //{
+        //    if (NextTargets.Count > 0)
+        //    {
+        //        return NextTargets;
+        //    }
+        //    return null;
+        //}
+
 
         /// <summary>Returns a Random Waypoint from the Global WaypointList</summary>
         public static Transform GetWaypoint()

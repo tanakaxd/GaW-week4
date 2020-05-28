@@ -334,7 +334,8 @@ namespace MalbersAnimations.Controller
                 DestinationPosition = GetTargetPosition();
 
                 IsWayPoint = target.GetComponent<IWayPoint>();
-                NextTarget = IsWayPoint?.NextTarget();
+                //NextTarget = IsWayPoint?.NextTarget(); // ここにGene要素絡ませる
+                NextTarget = IsWayPoint?.NextTarget()[0]; // ここにGene要素絡ませる
                 RemainingDistance = float.MaxValue;
                 MoveAgent = Move;
 

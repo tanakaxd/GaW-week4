@@ -9,7 +9,7 @@ public class Move : MonoBehaviour
     //private Camera cam;
 
     public NavMeshAgent agent;
-    public ThirdPersonCharacter character;
+    //public ThirdPersonCharacter character;
     public List<GameObject> wayPointsSystem = new List<GameObject>();
 
     [SerializeField] private int[] genes;
@@ -30,7 +30,7 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        agent.updateRotation = false;
+        //agent.updateRotation = false;
 
 
         //cam = GameObject.Find("Main Camera").GetComponent<Camera>();
@@ -41,20 +41,20 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        MoveToWayPoint();
+        //MoveToWayPoint();
         ChangeWayPoint();
     }
 
     private void MoveToWayPoint()
     {
-        if (agent.remainingDistance > agent.stoppingDistance)
-        {
-            character.Move(agent.desiredVelocity, false, false);
-        }
-        else
-        {
-            character.Move(Vector3.zero, false, false);
-        }
+        //if (agent.remainingDistance > agent.stoppingDistance)
+        //{
+        //    character.Move(agent.desiredVelocity, false, false);
+        //}
+        //else
+        //{
+        //    character.Move(Vector3.zero, false, false);
+        //}
     }
 
     private void ChangeWayPoint()

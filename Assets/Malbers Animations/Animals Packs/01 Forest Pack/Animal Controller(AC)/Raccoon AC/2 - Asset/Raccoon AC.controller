@@ -14,79 +14,79 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Horizontal
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: State
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: StateStatus
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: LastState
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Mode
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stance
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IDInt
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IDFloat
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SpeedMultiplier
     m_Type: 1
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Movement
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Random
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: States
@@ -17950,12 +17950,12 @@ AnimatorStateMachine:
   - {fileID: 1109616926730803084}
   - {fileID: 1109079873216345832}
   m_StateMachineTransitions:
-  - first: {fileID: 1107733495780145142}
-    second:
-    - {fileID: 1109276680167939402}
   - first: {fileID: 1107745349488851816}
     second:
     - {fileID: 1109561166876700328}
+  - first: {fileID: 1107733495780145142}
+    second:
+    - {fileID: 1109276680167939402}
   - first: {fileID: 1107216522858425912}
     second:
     - {fileID: 1109797976105417278}
@@ -18097,26 +18097,26 @@ AnimatorStateMachine:
   - {fileID: 1109167796523651122}
   - {fileID: 1109214868673348554}
   m_StateMachineTransitions:
-  - first: {fileID: 1107682735710156636}
-    second:
-    - {fileID: 1109935813313996634}
-  - first: {fileID: 1107112278491900650}
-    second:
-    - {fileID: 1109502065257143664}
   - first: {fileID: 1107231746298051510}
     second:
     - {fileID: 1109785767638363906}
   - first: {fileID: 1107235611564023184}
     second:
     - {fileID: 1109787047824159360}
-  - first: {fileID: 1107106768505017414}
-    second:
-    - {fileID: 1109247397797377936}
   - first: {fileID: 1107725768359318366}
     second:
     - {fileID: 1109426879359929300}
   - first: {fileID: 1107800299632842460}
     second: []
+  - first: {fileID: 1107106768505017414}
+    second:
+    - {fileID: 1109247397797377936}
+  - first: {fileID: 1107682735710156636}
+    second:
+    - {fileID: 1109935813313996634}
+  - first: {fileID: 1107112278491900650}
+    second:
+    - {fileID: 1109502065257143664}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 36, y: -168, z: 0}
   m_EntryPosition: {x: 108, y: -60, z: 0}
@@ -18501,12 +18501,12 @@ AnimatorStateMachine:
   - {fileID: 1101244871852762396}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: 1107911206200650880}
-    second:
-    - {fileID: 1109498768823045538}
   - first: {fileID: 1107173454218298684}
     second:
     - {fileID: 1109070612528250452}
+  - first: {fileID: 1107911206200650880}
+    second:
+    - {fileID: 1109498768823045538}
   - first: {fileID: 1107010154949415626}
     second:
     - {fileID: 1109623097444311940}
